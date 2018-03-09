@@ -1,9 +1,9 @@
 build:
 
-  docker_build:
+  ci:
     - docker build -t quay.io/bobhenkel/docker-gc:shippable-$BRANCH.BUILD_NUMBER .
     
-  docker_push:
+  post_ci:
     - docker push quay.io/bobhenkel/docker-gc:shippable-$BRANCH.BUILD_NUMBER
   
 integrations:
