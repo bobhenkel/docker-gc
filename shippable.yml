@@ -15,3 +15,11 @@ integrations:
   generic:     # k/v pair should be under the 'generic' header
     - integrationName: docker-gc-tag-name # whichever name you chose for your integration
    
+resources:
+  - name: docker-gc                             
+    type: gitRepo                               
+    integration: github             
+    pointer:
+      sourceName: bobhenkel/docker-gc                    
+      branch: master                      
+      buildOnPullRequest: true
