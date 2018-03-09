@@ -10,3 +10,6 @@ integrations:
   hub:
     - integrationName: quay    #replace with your integration name
       type: quayLogin
+  generic:     # k/v pair should be under the 'generic' header
+    - integrationName: docker-gc-tag-name # whichever name you chose for your integration
+   
