@@ -2,7 +2,7 @@ language:   python
 build:
 
   ci:
-    - echo "docker build starting..."
+    - echo building
     - docker build -t quay.io/bobhenkel/docker-gc:shippable-$BRANCH.$BUILD_NUMBER .
     
   post_ci:
